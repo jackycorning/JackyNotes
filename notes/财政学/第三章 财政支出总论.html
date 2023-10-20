@@ -1,0 +1,1068 @@
+<style> .hljs { white-space: pre-wrap !important; word-wrap: break-word !important; } </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <style>
+body {
+  background-color: #ffffff;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-transform: translate(0px) scale(1.15);
+  transform: translate(0px) scale(1.15);
+}
+
+select:focus {
+  outline: none !important;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #007AFF;
+  text-decoration: underline;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  background: #f9f9f9;
+  padding: 0.5em 10px;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body blockquote:before {
+  margin-right: 0.25em;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: 0.875em;
+}
+
+.markdown-body h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: 0.25em;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+  background-color: #f6f8fa;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body :not(pre)>code {
+  padding: 0.14em 0.3em;
+  margin: 0;
+  font-size: 85%;
+  vertical-align: 5%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfe2e5;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 4px;
+  border: thin solid #e0e0e0;
+}
+
+.markdown-body pre code {
+  max-width: auto;
+  padding: 16px;
+  margin: 0;
+  line-height: inherit;
+  word-wrap: normal;
+  border-radius: 3px;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.16em -1.25em;
+  vertical-align: middle;
+}
+
+.markdown-body .highlighter {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+.no-file-access {
+  color: red !important;
+  text-decoration: none !important;
+}
+
+.syntax-picker {
+  margin-left: -4px;
+  margin-bottom: 8px;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.syntax-picker::-webkit-scrollbar { 
+  display: none;
+}
+
+.syntax-light-theme-picker {
+  display: inline;
+}
+
+.syntax-dark-theme-picker {
+  display: none;
+}
+
+.toc-item {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.toc-item > a {
+  color: #24292e !important;
+  text-decoration: none !important;
+}
+
+.toc-level-1, .toc-level-2, .toc-level-3 {
+  font-weight: 500;
+}
+
+.toc-level-1 {
+  font-size: 19px;
+}
+
+.toc-level-2 {
+  font-size: 18px;
+}
+
+.toc-level-3 {
+  font-size: 17px;
+}
+
+.toc-level-4, .toc-level-5, .toc-level-6 {
+  font-size: 16px;
+}
+
+.embedded-file {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #dddddd;
+}
+</style>
+  <style>
+body {
+  background-color: #0f0f0f;
+}
+
+.markdown-body {
+  color: #e3e3e3;
+}
+
+.markdown-body a {
+  color: #0A84FF;
+}
+
+.markdown-body hr {
+  border-bottom: 1px solid #404040;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  color: #ffffff;
+}
+
+.markdown-body blockquote {
+  color: #acacac;
+  border-left: 0.25em solid #303030;
+  background: #202020;
+}
+
+.markdown-body kbd {
+  color: #444d56;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1 {
+  border-bottom: 1px solid #303030;
+}
+
+.markdown-body h2 {
+  border-bottom: 1px solid #303030;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  color: #6a737d;
+}
+
+.markdown-body table th {
+  background-color: #292929;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #404040;
+}
+
+.markdown-body table tr {
+  background-color: #212121;
+  border-top: 1px solid #c6cbd1;
+  color: #e3e3e3;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #292929;
+}
+
+.markdown-body img {
+  background-color: #0f0f0f;
+}
+
+.markdown-body :not(pre)>code {
+  background-color: #292929;
+  border-color: #404040;
+}
+
+.markdown-body pre {
+  border: thin solid #303030;
+}
+
+.markdown-body kbd {
+  color: #444d56;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body .highlighter {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.syntax-light-theme-picker {
+  display: none;
+}
+
+.syntax-dark-theme-picker {
+  display: inline;
+}
+
+.toc-item {
+  border-bottom: 1px solid #404040;
+}
+
+.toc-item > a {
+  color: #e3e3e3 !important;
+}
+
+.embedded-file {
+  border-color: #444444;
+}
+</style>
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 15px 45px;
+      font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.5;
+    }
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .markdown-body {
+        transform: scale(1);
+        transform-origin: top center;
+      }
+    }
+    .sequence svg, .flowchart svg, .mermaid svg, .plantuml-svg {
+      background: white;
+      margin-bottom: 24px;
+      margin-right: 24px;
+      border-radius: 3px;
+    }
+    .plantuml-svg {
+      display: block;
+    }
+  </style>
+  
+  <script>
+    if (true) {
+      MathJax = {
+        loader: { load: ["[tex]/upgreek"] },
+        showProcessingMessages: false,
+        tex: {
+          packages: { "[+]": ["upgreek"] },
+          autoload: {
+            upgreek: [
+              'upalpha', 'upbeta', 'upchi', 'updelta', 'Updelta', 'upepsilon',
+              'upeta', 'upgamma', 'Upgamma', 'upiota', 'upkappa', 'uplambda',
+              'Uplambda', 'upmu', 'upnu', 'upomega', 'Upomega', 'upomicron',
+              'upphi', 'Upphi', 'uppi', 'Uppi', 'uppsi', 'Uppsi', 'uprho',
+              'upsigma', 'Upsigma', 'uptau', 'uptheta', 'Uptheta', 'upupsilon',
+              'Upupsilon', 'upvarepsilon', 'upvarphi', 'upvarpi', 'upvarrho',
+              'upvarsigma', 'upvartheta', 'upxi', 'Upxi', 'upzeta',
+            ]
+          },
+          inlineMath: [],
+          processEscapes: true
+        },
+        tex2jax: {
+          inlineMath: [],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: "global"
+        }
+      };
+
+      const script = document.createElement("script");
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.1/es5/tex-mml-chtml.min.js";
+      script.defer = true;
+      const anchor = document.getElementsByTagName("script")[0];
+      anchor.parentNode.insertBefore(script, anchor);
+    }
+  </script>
+</head>
+<body>
+  <article class="markdown-body"><p><a href="%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%85%AC%E5%85%B1%E8%B4%A2%E6%94%BF%E4%B8%8E%E5%85%AC%E5%85%B1%E8%B4%A2%E6%94%BF%E6%80%9D%E6%83%B3">第一章 公共财政与公共财政思想</a>
+<a href="%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E5%85%AC%E5%85%B1%E8%B4%A2%E6%94%BF%E8%81%8C%E8%83%BD">第二章 公共财政职能</a></p>
+<h1>第一节 财政支出概述</h1>
+<h2>一、财政支出的概念</h2>
+<ul>
+<li>静态：各级政府通过<span class="highlighter">预算形式安排、支配的资金量</span>，这个资金量是指一个预算年度终了时政府所累积支出的总量。</li>
+<li>动态：各级政府在一个预算年度内<span class="highlighter">持续分配预算资金的活动过程</span>。</li>
+</ul>
+<h2>二、财政支出的分类</h2>
+<h3>（一）按政府职能分类</h3>
+<ul>
+<li>目前我国编制执行财政预算、进行预算拨款采用的分类方法。</li>
+</ul>
+<h3>（二）按经济性质分类</h3>
+<ul>
+<li>购买性支出（消耗性支出）
+<ul>
+<li>消费支出和投资支出</li>
+<li>影响集中在社会资源配置状况、社会总攻击与总需求的平衡上</li>
+<li><span class="highlighter">政府履行其资源配置职能和经济稳定发展职能的工具</span></li>
+</ul>
+</li>
+<li>转移性支出
+<ul>
+<li>社会保障支出、财政补贴支出和税式支出等
+<ul>
+<li>税式支出是以特殊的法律条款规定的、给予特定类型的活动或纳税人以各种税收优惠待遇而形成的税收收入损失或放弃的税收收入，包括照顾性税式支出和刺激性税式支出。</li>
+</ul>
+</li>
+<li>影响集中在分配领域</li>
+<li><span class="highlighter">财政履行收入再分配职能的重要工具</span></li>
+</ul>
+</li>
+</ul>
+<h3>（三）按行政级次分类</h3>
+<ul>
+<li>分为中央财政支出和各级地方财政支出
+<ul>
+<li>根据预算法“一级政府一级预算”，财政支出分为五级
+<ul>
+<li>中央财政支出</li>
+<li>地方财政支出
+<ul>
+<li>省、自治区、直辖市财政支出</li>
+<li>设区的市（地级市）、自治州财政支出</li>
+<li>县、自治县、不设区的市（县级市）、市辖区财政支出</li>
+<li>乡、民族乡、镇财政支出</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>第二节 财政支出规模与结构</h1>
+<h2>一、财政支出规模及其变化趋势</h2>
+<h3>（一）财政支出规模的含义</h3>
+<ul>
+<li>是研究和确定财政分配规模的重要指标</li>
+</ul>
+<h3>（二）财政支出规模的衡量指标</h3>
+<ul>
+<li>绝对指标
+<ul>
+<li>即财政支出的绝对规模，是指以一国货币单位表示的、预算年度内政府<span class="highlighter">实际安排和使用的财政资金的数量总额</span>。</li>
+</ul>
+</li>
+<li>相对指标
+<ul>
+<li>即财政支出的相对规模，是指在预算年度内政府<span class="highlighter">实际安排和使用的<strong>财政资金的金额</strong>占**相关经济总量指标（一般指国民生产总值）**的比率</span>。</li>
+<li>公式 $财政支出相对规模=\frac{财政支出绝对规模}{GDP}*100%$</li>
+</ul>
+</li>
+</ul>
+<h3>（三）财政支出增长的衡量指标</h3>
+<h4>1 . 财政支出增长率</h4>
+<ul>
+<li>表示当年财政支出<strong>绝对规模</strong>比上年同期财政支出<strong>绝对规模</strong>增长的百分比，即所谓“<span class="highlighter">同比</span>”增长率</li>
+<li>$\mit \Delta G（%）=\frac{\Delta G}{G_{n-1}}=\frac{G_n-G_{n-1}}{G_{n-1}}$</li>
+<li>其中 $\Delta G$ 表示当年财政支出绝对规模比上年财政支出绝对规模的增（减）额</li>
+<li>$G_n$ 表示当年财政支出绝对规模，$G_{n-1}$ 表示上年财政支出绝对规模</li>
+<li>不仅考虑到了经济增长的因素，而且<span class="highlighter">在一定程度上消除了物价变动的影响</span>，因而可以全面反映财政支出的增长趋势。</li>
+<li><span class="highlighter">该指标不能无限提高，其数量极限是客观存在的。</span></li>
+</ul>
+<h4>2. 财政支出增长的弹性系数</h4>
+<ul>
+<li>是指财政支出增长率与国内生产总值增长率之比。</li>
+<li>$\mit E_g=\frac{\Delta G(%)}{\Delta GDP(%)}$</li>
+<li>其中，$\mit \Delta GDP (%)=\frac{\Delta GDP}{GDP_{n-1}}=\frac{GDP_n-GDP_{n-1}}{GDP_{n-1}}$</li>
+<li>因此 $\mit E_g=\frac{\Delta G(%)}{\Delta GDP(%)}=\frac{\Delta G}{\Delta GDP}*\frac{GDP_{n-1}}{G_{n-1}}$</li>
+<li>式中
+<ul>
+<li>$\Delta GDP(%)$ 代表国内生产总值增长率，</li>
+<li>$\Delta GDP$ 代表当年国内生产总值比上年国内生产总值的增（减）额</li>
+</ul>
+</li>
+<li>国内 $E_g&gt;1$</li>
+</ul>
+<h4>3. 财政支出增长的边际倾向</h4>
+<ul>
+<li>国内生产总值每增加一个单位的同时财政支出增加多少</li>
+<li>$MGP=\frac{\Delta G}{\Delta GDP}$</li>
+</ul>
+<h3>（四）财政支出规模变化趋势</h3>
+<h4>从世界来看</h4>
+<ul>
+<li>财政支出规模总体呈现上涨趋势</li>
+<li>发达国家财政支出的规模高于发展中国家</li>
+<li>多数 OECD 国家受经济下滑影响呈现出下滑趋势</li>
+</ul>
+<h4>从我国看</h4>
+<ul>
+<li>财政支出相对规模从逐渐降低到逐渐升高</li>
+<li>相对规模较低的原因
+<ul>
+<li>总量上，我国预算管理总体实行以收定支、收支平衡原则，政府财政收入规模在一定程度上制约着财政支出规模。</li>
+<li>结构上，发达国家已经建立起比较完善的社会保障体系和社会福利制度，财政收入中社会保障税收入较高，相应地，财政支出中社会保险和福利支出较多；而我国社会保障体系目前还处于建立和完善阶段，没有单独的社会保险税，社会保障支出也相对较少。</li>
+</ul>
+</li>
+</ul>
+<h2>二、财政支出规模变化的理论分析</h2>
+<h3>（一）政府活动扩张理论</h3>
+<ul>
+<li>瓦格纳法则可以表述为：随着人均国民生产总值（GNP）的提高，财政支出占 GNP 的比重相应提高。
+<ul>
+<li>财政支出规模上升的<span class="highlighter">基本原因</span>是工业化
+<ul>
+<li>政治因素</li>
+<li>经济因素</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="20370307a1589453c0f4776f8b98682.jpg">20370307a1589453c0f4776f8b98682.jpg</a></li>
+</ul>
+<h3>（二）梯度渐进增长理论</h3>
+<ul>
+<li>实质上揭示了财政支出增长的两类原因，即内在因素和外在因素，故也称为内外因素论</li>
+<li><strong>内在因素</strong>是指公民可以忍受的税收水平的提高。</li>
+<li><strong>外在因素</strong>是指社会动荡对财政支出造成的压力。</li>
+<li>置换效应</li>
+<li>审视效应</li>
+<li>集中效应</li>
+<li><a href="e477da5f52b1b5e1417fc4f0a190c9e.jpg">e477da5f52b1b5e1417fc4f0a190c9e.jpg</a></li>
+</ul>
+<h3>（三）经济发展阶段理论</h3>
+<ul>
+<li>在经济发展的早期阶段，社会基础设施供给不足，政府公共投资往往要在社会总投资中占较高比重。</li>
+<li>当经济发展进入中期阶段后，政府加强对经济的干预。</li>
+<li>随着经济发展由中期阶段进入成熟阶段，购买性支出相对下降，转移性支出相对上升。</li>
+</ul>
+<h3>（四）非平衡增长理论</h3>
+<ul>
+<li>政府财政支出增长也可以从私人部门与公共部门<span class="highlighter">平均劳动生产率的增长差别（非平衡增长）的角度得到解释</span>。</li>
+<li>把国民经济区分为<strong>劳动生产率提高迅速的<span class="highlighter">私人部门</span>和劳动生产率提高缓慢的<span class="highlighter">公共部门</span></strong>。</li>
+</ul>
+<h2>三、财政支出结构及其变化趋势</h2>
+<h3>（一）财政支出结构类型</h3>
+<h4>1. 财政支出职能结构</h4>
+<ul>
+<li>分为一般公共服务，国防，公共秩序与安全，经济事务，环境保护，住房和社会福利设施，医疗保健，娱乐、文化和宗教，教育，社会保障 10 大类。</li>
+</ul>
+<h4>2. 财政支出经济性质结构</h4>
+<h4>3. 财政支出行政级次结构</h4>
+<h3>（二）财政支出结构变化趋势</h3>
+<h4>1. 职能分类</h4>
+<ul>
+<li>从世界看：
+<ul>
+<li>教育、医疗保健、社会保障方面的支出比重上升</li>
+<li>经济事务等支出下降</li>
+</ul>
+</li>
+<li>从我国看：
+<ul>
+<li>事关民生、基本公共服务均等化的支出明显上升</li>
+<li>一般公共服务支出明显下降</li>
+</ul>
+</li>
+</ul>
+<h4>2. 经济性质分类</h4>
+<ul>
+<li>从世界看：
+<ul>
+<li>购买性支出总体下降</li>
+<li>转移性支出总体上升</li>
+</ul>
+</li>
+<li>从我国看：
+<ul>
+<li>购买性支出占全部财政支出一般公共服务支出明显下降</li>
+<li>2009 年后，购买性支出回升</li>
+</ul>
+</li>
+</ul>
+<h4>3. 行政级次分类</h4>
+<ul>
+<li>从世界看：
+<ul>
+<li>中央和地方财政支出比例相对稳定</li>
+</ul>
+</li>
+<li>从我国看：
+<ul>
+<li>1995 年以来中央财政支出占比呈现出明显的下滑趋势</li>
+</ul>
+</li>
+</ul>
+<h2>四、财政支出结构变化的理论分析</h2>
+<ul>
+<li><a href="Pasted%20image%2020231001140839.png">Pasted image 20231001140839.png</a></li>
+<li>经济发展水平低——追求经济快速增长——用于经济建设的支出增加</li>
+<li>改革开放——购买性支出所占比重较大幅度下降/中央政府职责下放——地方政府财政支出份额逐渐增加</li>
+</ul>
+<h1>第三节 财政支出的经济效应</h1>
+<h2>一、财政支出的收入效应</h2>
+<ul>
+<li>财政支出会增加企业或者居民的收入水平</li>
+<li>主要通过转移支付实现</li>
+<li>增加转移性支出规模，对居民给予生活困难补助基本保障</li>
+</ul>
+<h2>二、财政支出的替代效应</h2>
+<ul>
+<li>财政支出会相对降低产品或者服务的价格-&gt;花更少的钱用于该产品或者服务的购买-&gt;增加对其他产品或者服务的购买</li>
+<li>收入效应和替代效应合称激励效应</li>
+</ul>
+<h2>三、财政支出的经济增长效应</h2>
+<ul>
+<li>财政支出能够促进经济增长</li>
+<li>财政支出的增加能够促进经济成倍增长</li>
+<li>通过乘数效应来实现</li>
+<li>购买性支出乘数要大于转移性支出乘数</li>
+</ul>
+<h2>四、财政支出的挤出效应</h2>
+<ul>
+<li>财政支出增加所引起私人消费或投资降低</li>
+<li>政府的财政支出通过税收机制减少私人部门可支配的收入</li>
+<li>政府财政支出的增加通过借债会使债券市场上的资金利率提高</li>
+</ul>
+<h2>五、财政支出的收入分配效应</h2>
+<ul>
+<li>财政支出可能会导致利益转移的现象，从而使财政支出带来的利益产生再分配</li>
+<li>一项财政支出可能不会使目标群体收益，而使非目标群体收益</li>
+<li>住房补贴支出的目的在于补助穷人，但其在短期内会造成住房需求的增加从而印致房价的上涨，以致真正获益的是富人而不是穷人</li>
+</ul>
+<h1>第四节 财政支出绩效</h1>
+<h2>一、财政支出绩效的内涵</h2>
+<ul>
+<li>主要是从政府的角度来分析财政支出安排过程中<span class="highlighter">投入的人力、物力、财力以及产出或者公共服务提供方面的效率、效益及效果情况</span>。</li>
+<li>与社会经济组织绩效评价的区别
+<ul>
+<li>衡量效益的标准不同</li>
+<li>计算“所得”与“所费”的范围不同</li>
+<li>择优的标准不同</li>
+</ul>
+</li>
+</ul>
+<h2>二、财政支出绩效的评价方法</h2>
+<h3>（一）成本效益分析法</h3>
+<h4>1. 净现值标准</h4>
+<ul>
+<li>$NPV=\sum\limits_{t=0}^n\frac{B_t-C_t}{(1+i)^t}$</li>
+<li>式中，$NPV$ 代表净现值，$B_t$ 代表第 t 年的收益，$C_t$ 代表第 t 年的成本，$n$ 代表项目的期限，$i$ 代表折现率。如果 $NPV&gt;0$，则说明项目可行。</li>
+</ul>
+<h4>2. 收益成本比率标准</h4>
+<ul>
+<li>$CBR=\sum\limits_{t=0}^n\frac{B_t}{(1+i)^t}/\sum\limits_{t=0}^n\frac{C_t}{(1+i)^t}$</li>
+<li>式中，$CBR$ 代表收益成本比率，$B_t$ 代表第 t 年的收益，$C_t$ 代表第 t 年的成本，$n$ 代表项目的期限，$i$ 代表折现率。如果 $CBR&gt;1$，则说明项目可行。</li>
+</ul>
+<h4>3. 内部收益率标准（IBR）</h4>
+<ul>
+<li>IBR 是让一个项目的 NPV 为零的折现率。</li>
+<li>$\exists i&gt;0, 使得 NPV=\sum\limits_{t=0}^n\frac{B_t-C_t}{(1+i)^t}=0$，称这个 i 为内部收益率。</li>
+<li>IBR 解决了在支出方案的收益与成本相等时，项目的收益率是多少的问题。</li>
+<li>公共支出项目是否可行，常用的标准是：$IBR&gt;该项目投入资金的机会成本$。</li>
+</ul>
+<h3>（二）比较法</h3>
+<ul>
+<li>相对评价方法</li>
+<li>常见方法
+<ul>
+<li>排序法</li>
+<li>一一对比法</li>
+<li>强制分配法</li>
+</ul>
+</li>
+</ul>
+<h3>（三）因素分析法</h3>
+<ul>
+<li>统计指数体系</li>
+<li>确定权重</li>
+</ul>
+<h3>（四）最低成本法</h3>
+<ul>
+<li>适用于成本易于计算但效益不容易计量</li>
+</ul>
+<h3>（五）公众评判法</h3>
+<ul>
+<li>民主性</li>
+<li>公开性</li>
+</ul>
+<h1>第五节 财政支出改革</h1>
+<h2>一、科学界定财政支出范围</h2>
+<h3>（一）厘清政府与市场间资源配置的职责边界</h3>
+<h3>（二）厘清政府与社会的职责边界</h3>
+<h2>二、调整优化财政支出结构</h2>
+<h3>（一）教育支出</h3>
+<h3>（二）医疗卫生支出</h3>
+<h3>（三）社会保障支出</h3>
+<h2>三、持续改进财政支出方式</h2>
+<h3>（一）分类甄选财政支出方式</h3>
+<h3>（二）优化财政拨款方式</h3>
+<h3>（三）推进财政补贴改革</h3>
+<h2>四、全面推进财政支出绩效评价</h2>
+<h3>（一）拓展财政支出绩效评价的范围</h3>
+<h3>（二）建立全过程财政支出绩效管理链条</h3>
+<h3>（三）明确绩效管理责任约束</h3>
+<h3>（四）强化绩效管理激励约束</h3>
+</article>
+  
+  
+  
+  
+</body>
+<script>
+  // Translate vectors to <object> to properly use online fonts
+  const images = document.querySelectorAll("img");
+  images.forEach(image => {
+    const source = image.src;
+    if (source.includes("image/svg+xml") || source.toLowerCase().endsWith(".svg")) {
+      const object = document.createElement("object");
+      object.setAttribute("data", source);
+      image.parentNode.replaceChild(object, image);
+    }
+  });
+</script>
+<style>
+  
+</style>
+<script>
+  // Learn more: https://docs.taio.app/#/editor/custom-preview
+window.addEventListener("load", event => {
+  
+});
+</script>
+</html>
